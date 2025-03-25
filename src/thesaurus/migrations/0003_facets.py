@@ -12,6 +12,14 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
+	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('calendartype_ss','Calendar Type','', 1, 10, 1, 10, 2);"),
+	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('customtags','Custom Tags','', 1, 10, 1, 10, 2);"),
+	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('baseline_ss','Baseline','', 1, 10, 1, 10, 2);"),
+	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('documenttype_ss','Document Type','', 1, 10, 1, 10, 2);"),
+	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('level_ss','Level','', 1, 10, 1, 10, 2);"),
+	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('producttype_ss','Product Type','', 1, 10, 1, 10, 2);"),
+	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('instrument_ss','Instrument','', 1, 10, 1, 10, 2);"),
+	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('mission_ss','Mission','', 1, 10, 1, 10, 2);"),
 	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('tag_ss','Tags','http://schema.org/keywords', 1, 10, 1, 10, 2);"),
 	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('language_s','Language','http://schema.org/inLanguage', 1, 10, 0, 10, 10);"),
 	migrations.RunSQL("INSERT INTO thesaurus_facet (facet,label,uri,enabled,facet_limit,snippets_enabled,snippets_limit,facet_order) VALUES ('person_ss','Persons','http://schema.org/Person', 1, 10, 1, 10, 3);"),
